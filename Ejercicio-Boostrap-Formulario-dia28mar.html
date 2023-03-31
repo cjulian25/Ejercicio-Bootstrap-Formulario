@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./paisaje-montaña.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container{
+            background-color: rgba(255, 255, 255, 0.116);
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d-flex justify-content-center mt-5">
+        <form class="container mt-3">
+            <label for="nombre" class="form-label mt-4">User Name</label>
+            <input type="text" class="form-control" id="nombre">
+    
+            <label for="email" class="form-label mt-3">E-Mail</label>
+            <input type="emal" class="form-control" id="email">
+    
+            <label for="direccion" class="form-label mt-3">Direccion</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Av. Calle #">
+    
+            <div class="row row-sm-3">
+                <div class="col-xxl-6 col-sm-12">
+                    <label for="ciudad" class="form-label mt-3">Ciudad</label>
+                    <input type="text" class="form-control" id="ciudad">
+                </div>
+    
+                <div class="col-xxl-3 col-sm-12">
+                    <label for="departamento" class="form-label mt-3">Departamento</label>
+                    <select id="departamento" class="form-control">
+                        <option>Elija...</option>
+                        <option>Floridablanca</option>
+                        <option>Bucaramanga</option>
+                        <option>Girón</option>
+                        <option>Piedecuesta</option>
+                    </select>
+                </div>
+    
+                <div class="col-xxl-3 col-sm-12">
+                    <label for="codigoPostal" class="form-label mt-3">Codigo Postal</label>
+                    <input type="text" class="form-control" id="cosdigoPostal">
+                </div>
+            </div>
+    
+            <div class="col">
+                <label for="textarea" class="form-label mt-3">Deje aqui sus comentarios</label>
+                <div class="col row">
+                    <div>
+                        <textarea id="textarea" class="form-control" rows="6"></textarea>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="d-flex justify-content-center">
+                <div class="mt-5">
+                    <input type="checkbox" id="checkboox" class="form-check-input">
+                    <label for="checkboox">Acepta los términos y condiciones</label>
+                </div>
+            </div>
+    
+            <div class="d-flex justify-content-center mt-4 mb-5">
+                <button class="btn btn-primary">Confirmar</button>
+            </div>
+    
+        </form>
+    </div>
+</body>
+</html>
